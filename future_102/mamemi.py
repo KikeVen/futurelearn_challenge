@@ -7,9 +7,13 @@
     author: enrique bruzual
     website: https://enriquebruzual.netlify.com/
 """
+import pygal
+from pygal.style import DefaultStyle
 
-exchange_rate = [3388.16, 3369.15, 3339.89, 3284.94, 3232.45, 3183.02, 3303.95, 3389.11, 3401.45, 3298.21, 3528.76, 3753.34, 3594.35,
-                 3805.21, 3655.81, 3602.21, 3647.28, 5087.34, 5009.63, 5015.26, 5139.24, 5262.07, 5350.22, 5494.85, 5129.30]
+exchange_rate = [3388.16, 3369.15, 3339.89, 3284.94, 3232.45, 3183.02, 3303.95,
+                 3389.11, 3401.45, 3298.21, 3528.76, 3753.34, 3594.35,
+                 3805.21, 3655.81, 3602.21, 3647.28, 5087.34, 5009.63, 5015.26,
+                 5139.24, 5262.07, 5350.22, 5494.85, 5129.30]
 
 
 def stats(list_name):
@@ -41,3 +45,14 @@ print("| Mea:\t" + str(smean))
 print("| Mim:\t" + str(smin))
 print("|")
 print("+-------------------------------+")
+
+# line_chart = pygal.StackedLine(fill=True, interpolate='cubic', style=DefaultStyle)
+# line_chart.title = 'Last five business days'
+# line_chart.x_labels = map(str, range(1, 5))
+# line_chart.add('Bss per dollar', srange)
+# line_chart.render_to_file('chart.svg') 
+
+
+chart = pygal.StackedLine(fill=True, interpolate='cubic') # Setting style here is not necessary
+chart.add('Bss per dollar', srange)
+chart.render_to_file('chart.svg')
