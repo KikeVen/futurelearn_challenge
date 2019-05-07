@@ -20,7 +20,7 @@ def sorter():
     """takes a list and sorts from min to max, using
     the 'bubble' algorithm
     """
-    list_name = list_int
+    list_name = list_float
     changed = True
     while changed:
         changed = False
