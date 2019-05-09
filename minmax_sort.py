@@ -5,7 +5,7 @@
     description: Custom algorithm: "produce aisle"
         function takes a single type list, and returns a sorted list
         from min to max. with `list_float` it performs in 4.5 to 5 seconds
-        compared to bubble algorithm which performs in 7 to 9 seconds
+        compared to bubble algorithm which performs in 12 to 14 seconds
     author: enrique bruzual
     website: https://enriquebruzual.netlify.com/
 """
