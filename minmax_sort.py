@@ -20,7 +20,7 @@ list_float = [3388.16, 3369.15, 3339.89, 3284.94, 3232.45, 3183.02, 3303.95,
 list_int = [4, 7, 9, 12, 2, 6, 1, 5, 8, 10, 0]
 list_boo = [True, False]
 list_str = ["bread", "cheese", "apple", "tomato", "biscuits"]
-list_mix = ["cheese", False, 0, 5814.15] # will give an error
+list_mix = ["cheese", False, 0, 5814.15]  # will give an error
 
 
 # ----------------------------- sort function ----------------------------- #
