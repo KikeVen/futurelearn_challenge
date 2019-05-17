@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 
 """
-    description: Custom algorithm: "produce aisle"
+    description: Custom algorithm: "too slow"
         function takes a single type list, and returns a sorted list
-        from min to max. with `list_float` it performs in 4.5 to 5 seconds
-        compared to bubble algorithm which performs in 12 to 14 seconds
+        from min to max. with `list_float`
+        Correction: I had reported the algorithm was faster than 
+        bubble sort, but after implementing the timeit module properly
+        it was reveal, this algorithm is slower
     author: enrique bruzual
     website: https://enriquebruzual.netlify.com/
 """
-import timeit
 
 # ----------------------------- sample data ----------------------------- #
 
@@ -25,7 +26,7 @@ list_mix = ["cheese", False, 0, 5814.15]  # will give an error
 
 # ----------------------------- sort function ----------------------------- #
 
-def mm_sorter():  # ist_name
+def mm_sorter(list_name):  # list_name
     """It takes a list, float, int or string and sorts them out from min to max
     Arguments:
         list_name {int, boo, float, string} -- list to be sorted
@@ -33,7 +34,7 @@ def mm_sorter():  # ist_name
         int, boo, float, string -- a copy of the original list sorted from min to max
     """
     # list_copy = list_name[:]
-    list_name = list_float
+    # list_name = list_float
     sorted_list = []
     minc = 0
     maxc = -1
@@ -65,10 +66,7 @@ def mm_sorter():  # ist_name
 
 
 if __name__ == "__main__":
-
-    print(mm_sorter())
-    time_it = timeit.timeit(mm_sorter)
-    print('Time it took to run: ', time_it)
+    pass
 
 
 # ----------------------------- Visual algorithm ----------------------------- #
