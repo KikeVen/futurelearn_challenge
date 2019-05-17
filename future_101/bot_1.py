@@ -11,6 +11,7 @@
     website: https://enriquebruzual.netlify.com/
 """
 import operator
+
 print()
 print("Hi, I am Marvin, your personal utilitarian bot. What would you like to do?")
 command = input("press [a]dd, [s]ubtract, [m]ultiply, [t]ip calculator or [d]ivide ")
