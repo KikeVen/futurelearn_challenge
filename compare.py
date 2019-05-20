@@ -18,12 +18,17 @@ my_float = mms.list_float
 # def bs(): return bbs.sorter(list_to_sort)
 # def ms(): return mms.mm_sorter(list_to_sort)
 
-bs = lambda: bbs.sorter(my_float)
-ms = lambda: mms.mm_sorter(my_float)
+bs = lambda: bbs.sorter(list_to_sort)
+ms = lambda: mms.mm_sorter(list_to_sort)
+ts = lambda: sorted(list_to_sort)
 
 # time the functions for 100 runs each
-print("My took:")
-print(timeit(ms, number=100))
+print("For a run of 1000 each\n")
+print("My lamemo algo took:")
+print(timeit(ms, number=1000))
 
 print("Bubble took:")
-print(timeit(bs, number=100))
+print(timeit(bs, number=1000))
+
+print("Timsort took:")
+print(timeit(ts, number=1000))
