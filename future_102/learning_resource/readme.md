@@ -1,6 +1,6 @@
-# Python Functions
+# Python Functions [draft: 5/20/19]
 
-Functions are a way to organize code into reusable blocks of code. They are easy consents to implement, but they are very flexible and powerful, their level of complexity rather rapidly.
+Functions are a way to organize code into reusable blocks of code. They are easy to implement, yet flexible and powerful.
 
 ## Today we are going to:
 
