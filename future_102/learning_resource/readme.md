@@ -54,7 +54,7 @@ So far we understand the idea of using the built-in functions, there are repetit
 
 For example we may have a block of sequential code that we would like to reuse and call it when we need it.
 
-We may want to print to screen a string with a line above and bellow to bring attention to it
+We may want to print to screen a string with a line above and below to bring attention to it
 
 ```text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +72,7 @@ print('my_string')
 print('~' * len(my_string))
 ```
 
-if we use it in different parts of our script it would become very difficult to maintain, as we have to update all the instances of our block of code.
+if we use it in different parts of our script it would become very difficult to maintain, as we have to update all the instances of our code block.
 
 ---
 
@@ -99,15 +99,14 @@ def function_name():
 
 ---
 
-#### Function space formatting
+#### Function indentation formatting
 
-we let python know which code belongs to a particular function, by indenting it right below the function definition.
+we let python know which code belongs to a particular function, by indenting it below the function definition.
 
 ```txt
 <code does not belong to function>
 
 <function definition>
-    <function code block>
     <function code block>
     <function code block>
     <function code block>
