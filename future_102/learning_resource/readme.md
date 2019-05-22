@@ -70,7 +70,7 @@ welcome to my house, take your shoes off
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
-Sequentially we might do something like this, but every time we want to use this block of code, we have to copy it and past it where we what to use it.
+Sequentially we might do something like this, but every time we want to use this block of code, we have to copy it and past it where we want to use it.
 
 ```python
 my_string = 'welcome to my house, take your shoes off'
@@ -82,11 +82,13 @@ print('~' * len(my_string))
 
 if we use it in different parts of our script it would become very difficult to maintain, as we have to update all the instances of our code block.
 
+By turning our code block into a function, we add flexibility to the use and maintenance of our code
+
 ---
 
 ### Function structure
 
-Lets brake down the structure of a function and how to write one.
+Lets brake down the structure of a function and learn how to write one.
 
 #### Defining our function
 
@@ -130,11 +132,11 @@ Now, we know the proper function indentation format, lets continue with our func
 
 Right below the function definition we begin with our docstring
 
-> "A universal convention supplies all of maintainability, clarity, consistency, and a foundation for good programming habits too. What it doesn't do is insist that you follow it against your will. That's Python!"
-> 
-> —Tim Peters on comp.lang.python, 2001-06-16
-
 A docstring is a string literal that occurs as the first statement in a module, function, class, or method definition. Such a docstring becomes the `__doc__` special attribute of that object.
+
+- It is intended as formated documentation for that module, function, class or method.
+- Useful as we read a program and try to understand it or remember what we wrote.
+- Useful if we import a script into another script to make use of a particular function, as code editors can display the docstring of the function you are about to import
 
 ```python
 def function_name():
@@ -143,6 +145,10 @@ def function_name():
 
 1. Right below the definition, indent your code
 2. With-in triple quotes enter your docstring
+
+> "A universal convention supplies all of maintainability, clarity, consistency, and a foundation for good programming habits too. What it doesn't do is insist that you follow it against your will. That's Python!"
+> 
+> —Tim Peters on comp.lang.python, 2001-06-16
 
 ---
 
@@ -199,9 +205,9 @@ def header():
     print('~' * len(my_string))
 ```
 
-Now that we know how a function is made. We can now call our function header from any place in the script, even from other script and it will execute the indented chunk of code.
+Now that we know how a function is made. We can call our function, `header()`, from any place in the script, even from other scripts and it will execute the indented code block.
 
-We call our function like any other function. In this particular case the print statements are with the function, so all we have to do is call it, and it will print to screen automatically.
+We call our function like any other function. In this particular case the print statements are within the function, so all we have to do is call it, and it will print to screen automatically.
 
 ```python
 >>> header()
@@ -211,6 +217,8 @@ Help me write a function
 ```
 
 In this particular case is taking the variable `my_string` to generate the formatting and print the message.
+
+---
 
 #### Parameters and arguments in functions
 
@@ -226,11 +234,11 @@ In this lesson we will introduce the **positional parameter**
 
 Positional parameters are the most commonly use in functions, so this is where we are going to start, in later lesson we will cover the other types of parameters and arguments.
 
-We can, by modifying it and passing the string as a positional `parameter`. A function can take any number of parameters, you would just have to separate them with comas. `def function(parm, param2):`
+A function can take any number of **parameters,** you just have to separate them with comas. `def function(parm, param2):`
 
 > It is important to note, you must pass the values of the parameters in the correct order, hence the name positional. You can even pass other functions as parameters.
 
-But lets start by passing a single positional parameter.
+But lets start by passing a **single positional parameter.**
 
 1. Add an parameter name, `message`, inside the parenthesis of our function definition.
 
