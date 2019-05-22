@@ -14,8 +14,6 @@
 
 Functions are a way to organize code into reusable blocks of code. They are easy to implement, yet flexible and powerful.
 
-
-
 ---
 
 ## Introduction
