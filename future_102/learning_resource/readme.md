@@ -1,13 +1,20 @@
-# Python Functions [draft: 5/21/19]
+# Python Functions
+
+- [Python Functions](#python-functions)
+  - [Introduction](#introduction)
+  - [Anatomy of a function](#anatomy-of-a-function)
+    - [Function structure](#function-structure)
+      - [Defining our function](#defining-our-function)
+      - [Function indentation formatting](#function-indentation-formatting)
+      - [Function docstring](#function-docstring)
+      - [Function code block](#function-code-block)
+      - [Return the function value/s](#return-the-function-values)
+    - [Our first basic function](#our-first-basic-function)
+    - [Exorcises](#exorcises)
 
 Functions are a way to organize code into reusable blocks of code. They are easy to implement, yet flexible and powerful.
 
-Today we are going to:
 
-* Introduce functions
-* Anatomy of a function
-* Our first basic function
-* Exorcises
 
 ---
 
