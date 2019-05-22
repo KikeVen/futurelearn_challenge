@@ -216,7 +216,11 @@ In this particular case is taking the variable `my_string` to generate the forma
 
 We can make our function more flexible if we could use it like the `print()` function, where we pass the message and it does the rest.
 
-In python you can pass parameters and arguments to a function. You can pass any number of parameters to a function, they are just variables. You can also pass three types of arguments, the **default** argument, **key** argument and **arbitrary** argument. In this lesson we will introduce the **default** argument
+In python you can pass parameters and arguments to a function. You can pass any number of parameters to a function, they are just variables. You can also pass three types of arguments, the **default** argument, **key** argument and **arbitrary** argument.
+
+In this lesson we will introduce the **positional parameter**
+
+---
 
 ##### Positional function parameters
 
