@@ -42,15 +42,15 @@ we can combine functions to make them more powerful
 
 So far using functions, has been like magic. We pass an **argument** and it `returns` the results.
 
-The python core developers wrote the **built-in** functions, we can get a list of all the built-in functions from the Python [documentation](https://docs.python.org/3/library/functions.html) but we can write our own function too, making python even more flexible and powerful
+The python core developer team wrote the **built-in** functions, we can get a list of all the built-in functions from the Python [documentation](https://docs.python.org/3/library/functions.html), also we can write our own function too, making python even more flexible and powerful
 
-> Python was written with the idea of being modular, as a matter of fact all scripts in Python are considered 'modules'. Allowing programming to write small peaces of codes, and call them when we need them, calling chunks of code we had previously written into new scripts, just like we can call the `print()` function
+> Python was written with the idea of being modular, as a matter of fact all scripts in Python are considered 'modules'. Allowing programmers to write small pieces of code, and call them when we need them. Calling chunks of code we had previously written into new scripts, just like we can call the `print()` function
 
 ---
 
 ## Anatomy of a function
 
-So far we understand the idea of using the built-in functions, there are repetitive tasks we would like to call and reuse with out coping and pasting all over our scripts.
+So far we understand the idea of using the built-in functions, there are repetitive tasks we would like to call and reuse with out copying and pasting all over our scripts.
 
 For example we may have a block of sequential code that we would like to reuse and call it when we need it.
 
