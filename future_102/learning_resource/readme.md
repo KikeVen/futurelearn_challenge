@@ -1,6 +1,6 @@
-# Python Functions
+# Introduction to Python Functions
 
-- [Python Functions](#python-functions)
+- [Introduction to Python Functions](#introduction-to-python-functions)
   - [Introduction](#introduction)
   - [Anatomy of a function](#anatomy-of-a-function)
     - [Function structure](#function-structure)
@@ -10,6 +10,8 @@
       - [Function code block](#function-code-block)
       - [Return the function value/s](#return-the-function-values)
     - [Our first basic function](#our-first-basic-function)
+      - [Parameters and arguments in functions](#parameters-and-arguments-in-functions)
+        - [Positional function parameters](#positional-function-parameters)
     - [Exorcises](#exorcises)
 
 Functions are a way to organize code into reusable blocks of code. They are easy to implement, yet flexible and powerful.
@@ -20,8 +22,8 @@ Functions are a way to organize code into reusable blocks of code. They are easy
 
 We already have used some of python's **built-in** functions, such as:
 
-* `print()` At it's most basic level allows us to print to scree
-* `str()` Allows to set the Type of an object to a string
+- `print()` At it's most basic level allows us to print to scree
+- `str()` Allows to set the Type of an object to a string
 
 We know if we **"call"** the print function and **"pass"** a string, "Hello world", as an **"argument"**, when the program executes it will print what ever we wrote to the screen.
 
@@ -41,13 +43,14 @@ we can combine functions to make them more powerful
 ```python
 >>> print(type(1))
 <class 'int'>
->>> print(type(int(1)))
-<class 'int'>
+>>> print(type(str(1)))
+<class 'str'>
+>>>
 ```
 
-So far using functions, has been like magic. We pass an **argument** and it `returns` the results.
+Using functions, has been like magic. We pass an **argument** and it `returns` the results.
 
-The python core developer team wrote the **built-in** functions, we can get a list of all the built-in functions from the Python [documentation](https://docs.python.org/3/library/functions.html), also we can write our own function too, making python even more flexible and powerful
+The python core development team wrote all the **built-in** functions, we can get a list of all the built-in functions from the Python [documentation](https://docs.python.org/3/library/functions.html). We can also **write our own function,** making python even more flexible and powerful
 
 > Python was written with the idea of being modular, as a matter of fact all scripts in Python are considered 'modules'. Allowing programmers to write small pieces of code, and call them when we need them. Calling chunks of code we had previously written into new scripts, just like we can call the `print()` function
 
@@ -155,7 +158,7 @@ def function_name():
     c = a + b
 ```
 
-* Write each line of your function code, starting with indentation
+- Write each line of your function code, starting with indentation
 
 > If we *call the function* in the example above and assign it to a variable we **would not** get anything in **return.**
 
@@ -174,7 +177,7 @@ def function_name():
     return c
 ```
 
-* In the last line of our function, type the keyword `return` followed by the value to return. Now if you assign your function to a variable it will return a value that can be used for other operations
+- In the last line of our function, type the keyword `return` followed by the value to return. Now if you assign your function to a variable it will return a value that can be used for other operations
 
 >Note that a function can execute other functions, and code which will cause your application to do something with out having to use the keyword `return`. We will see an example below.
 
@@ -209,9 +212,25 @@ Help me write a function
 
 In this particular case is taking the variable `my_string` to generate the formatting and print the message.
 
-We can make it more flexible if we could use it like the `print()` function, where we give it the message and it does the rest.
+#### Parameters and arguments in functions
 
-We can, by modifying it and passing the string as an `argument`
+We can make our function more flexible if we could use it like the `print()` function, where we pass the message and it does the rest.
+
+In python you can pass parameters and arguments to a function. You can pass any number of parameters to a function, they are just variables. You can also pass three types of arguments, the **default** argument, **key** argument and **arbitrary** argument. In this lesson we will introduce the **default** argument
+
+##### Positional function parameters
+
+Positional parameters are the most commonly use in functions, so this is where we are going to start, in later lesson we will cover the other types of parameters and arguments.
+
+We can, by modifying it and passing the string as a positional `parameter`. A function can take any number of parameters, you would just have to separate them with comas. `def function(parm, param2):`
+
+> It is important to note, you must pass the values of the parameters in the correct order, hence the name positional. You can even pass other functions as parameters.
+
+But lets start by passing a single positional parameter.
+
+1. Add an parameter name, `message`, inside the parenthesis of our function definition.
+
+2. Assign that parameter name to all the operations that need to make use of it.
 
 ```python
 def header(message):
@@ -220,7 +239,7 @@ def header(message):
     print('~' * len(message))
 ```
 
-We are passing an argument as 'message', so what ever string we pass as an argument will be used to format the string
+We are passing a parameter as 'message', so what ever string we pass as parameter will be used to format the string
 
 ```python
 header('Welcome to my card game')
@@ -236,9 +255,9 @@ Welcome to my card game
 
 Having turned your code block into a function, give you a few advantages.
 
-* Centralized code
-* Modify once, easy to maintained
-* Call it from anywhere, even from other scripts
+- Centralized code
+- Modify once, easy to maintained
+- Call it from anywhere, even from other scripts
 
 Functions are really powerful and offer enormous flexibility.
 
