@@ -25,7 +25,7 @@ We already have used some of python's **built-in** functions, such as:
 - `print()` At it's most basic level allows us to print to scree
 - `str()` Allows to set the Type of an object to a string
 
-We know if we **"call"** the print function and **"pass"** a string, "Hello world", as an **"argument"**, when the program executes it will print what ever we wrote to the screen.
+We know if we **"call"** the print function and **"pass"** a string, "Hello world", as an **"parameter"**, when the program executes it will print what ever we wrote to the screen.
 
 ```python
 >>> print('Hello world')
@@ -48,7 +48,7 @@ we can combine functions to make them more powerful
 >>>
 ```
 
-Using functions, has been like magic. We pass an **argument** and it `returns` the results.
+Using functions, has been like magic. We pass an **parameter** and it `returns` the results.
 
 The python core development team wrote all the **built-in** functions, we can get a list of all the built-in functions from the Python [documentation](https://docs.python.org/3/library/functions.html). We can also **write our own function,** making python even more flexible and powerful
 
@@ -112,14 +112,14 @@ def function_name():
 we let python know which code belongs to a particular function, by indenting it below the function definition.
 
 ```txt
-<code does not belong to function>
+# code does not belong to function
 
-<function definition>
-    <function code block>
-    <function code block>
-    <function code block>
+def function_name([parameter], [parameter]):
+    statements
+    statements
+    [return result]
 
-<code does not belong to function above>
+# code does not belong to function above
 ```
 
 Now, we know the proper function indentation format, lets continue with our function.
@@ -245,14 +245,14 @@ def header(message):
 
 We are passing a parameter as 'message', so what ever string we pass as parameter will be used to format the string. 
 
-- Lets call our function with the positional argument in it
+- Lets call our function with the positional parameter in it
 - Note, we could assign the string to a variable and pass that variable as the parameter
 
 ```python
 >>> header('Welcome to my card game')
 ```
 
-Now the `header()` will return the following:
+Now the `header()` function will return the following:
 
 ```cmd
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -272,7 +272,10 @@ Functions are really powerful and offer enormous flexibility.
 
 ### Exorcises
 
----
-[ ]  List some exorcises
+Write a function to do the following. You may want to write the sequential code, then you can turn your code block into a function.
 
----
+- [ ] Find the Max of three numbers.
+- [ ] Sum all the numbers in a list.
+- [ ] Multiply all the numbers in a list.
+- [ ] Reverse a string.
+- [ ] Accepts a string and calculate the number of upper case letters and lower case letters.
