@@ -152,13 +152,13 @@ def function_name():
 
 * Write each line of your function code, starting with indentation
 
-> If we call the function above and assign it to a variable would would not get anything in **return.**
+> If we *call the function* in the example above and assign it to a variable we **would not** get anything in **return.**
 
 ---
 
 #### Return the function value/s
 
-In order to get the result from our function, we must tell the function what to return. by using the keyword `return`
+In order to get the result from our function, we must tell the function what to return by using the keyword `return`
 
 ```python
 def function_name():
