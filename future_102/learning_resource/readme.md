@@ -243,13 +243,16 @@ def header(message):
     print('~' * len(message))
 ```
 
-We are passing a parameter as 'message', so what ever string we pass as parameter will be used to format the string
+We are passing a parameter as 'message', so what ever string we pass as parameter will be used to format the string. 
+
+- Lets call our function with the positional argument in it
+- Note, we could assign the string to a variable and pass that variable as the parameter
 
 ```python
-header('Welcome to my card game')
+>>> header('Welcome to my card game')
 ```
 
-Now the result would look like this:
+Now the `header()` will return the following:
 
 ```cmd
 ~~~~~~~~~~~~~~~~~~~~~~~
