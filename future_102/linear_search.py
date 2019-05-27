@@ -34,4 +34,3 @@ else:
             print(sequence[position], 'was found at index', str(position))
         else:
             pass
-
