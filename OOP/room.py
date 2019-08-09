@@ -33,4 +33,9 @@ class Room():
         self.linked_rooms[direction] = room_to_link
         # print(self.name + "linked rooms:" + repr(self.linked_rooms))
 
+    def get_details(self):
+        for direction in self.linked_rooms:
+            room = self.linked_rooms[direction]
+            print("The " + room.get_name() + " is " + direction)
+
 

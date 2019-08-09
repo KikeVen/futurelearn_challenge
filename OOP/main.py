@@ -12,13 +12,15 @@ from room import Room
 kitchen = Room('Kitchen')
 kitchen.set_description('A dank and dirty room buzzing with flies.')
 
-dinning_hall = Room('Dinning Room')
-dinning_hall.set_description('A large room with ornate golden decoration on each wall')
+dining_hall = Room('Dinning Room')
+dining_hall.set_description('A large room with ornate golden decoration on each wall')
 
 ballroom = Room('Ballroom')
 ballroom.set_description('A large room where people dance')
 
-kitchen.link_room(dinning_hall, 'south')
-dinning_hall.link_room(ballroom, 'west')
+kitchen.link_room(dining_hall, 'south')
+dining_hall.link_room(ballroom, 'west')
+
+dining_hall.get_details()
 
 # kitchen.describe()
