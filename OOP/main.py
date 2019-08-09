@@ -19,8 +19,15 @@ ballroom = Room('Ballroom')
 ballroom.set_description('a large room where people dance')
 
 kitchen.link_room(dining_hall, 'south')
+dining_hall.link_room(kitchen, 'north')
 dining_hall.link_room(ballroom, 'west')
+ballroom.link_room(dining_hall, 'east')
 
-dining_hall.get_details()
+current_room = kitchen
 
-# kitchen.describe()
+while True:
+    print("\n")
+    print(current_room.get_details()[0])
+    print(current_room.get_details()[1])
+    command = input("> ")
+    current_room = current_room.move(command)
